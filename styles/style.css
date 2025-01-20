@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  /* Computer Navbar style start  */
+  .navbar{
+    width: 100vw;
+    height: 102px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-content{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+  }
+  .school-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .school-nav .school{
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .about-school ul{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-school ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .home{
+    color: orange;
+    font-weight: bold;
+  }
+  .about{
+    color: skyblue;
+  }
+  .facilities{
+    color: #05D4DF;
+  }
+  .admission{
+    color: #5D58EF;
+  }
+  .Contact button{
+    width: 197px;
+    height: 50px;
+    background-color:orange;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+  }                         /* Computer navbar style end */
+
+  /* Mobil navbar style start  */
+  .mobil-navbar{
+    width: 100vw;
+    height: 70px;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid orange;
+  }
+  .mobil-nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .mobil-nav-content img{
+    width: 46px;
+    height: 46px;
+  }
+  .mobil-nav-content i{
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  /* Mobil style */
+
+  @media screen and (max-width:576px) {
+    .nav-content{
+        display: none;
+    }
+    .navbar{
+        height: 70px;
+    }  /* mobil navbar style end */
+  }
+
+  /* computer navbar style  */
+ @media screen and (min-width:577px){
+    .mobil-navbar{
+        display: none;
+    }   /*computer navbar style end */
+ }
