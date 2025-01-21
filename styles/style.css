@@ -219,6 +219,7 @@
       rgba(255, 244, 220, 1)0%,
       rgba(255, 255, 255, 0)45%
     );
+    background-color: #ffffff;
   }
   .card-3{
     background: linear-gradient(
@@ -226,6 +227,7 @@
       rgba(238, 225, 255, 1)0%,
       rgba(255, 255, 255, 0)45%
     );
+    background-color: #ffffff;
     
   }
   .aero{
