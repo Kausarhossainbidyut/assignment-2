@@ -10,21 +10,22 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
-
+  
   /* Computer Navbar style start  */
-  .navbar{
+  /* .navbar{
     width: 100vw;
     height: 102px;
     display: flex;
+    justify-content: center;
     align-items: center;
-  }
+  } */
   .nav-content{
     width: 90vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid black; */
+    margin-top: 20px;
   }
   .school-nav{
     display: flex;
@@ -76,7 +77,6 @@
   .mobil-navbar{
     width: 100vw;
     height: 70px;
-    /* background-color: bisque; */
     display: flex;
     align-items: center;
     border-bottom: 1px solid orange;
@@ -95,7 +95,159 @@
   .mobil-nav-content i{
     font-size: 30px;
     margin-right: 10px;
+  }                      /* Mobil navbar style end  */
+
+
+  /* Hero Section style  */
+  /* .hero-section{
+    width: 100vw;
+    height: 575px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .hero-congener{
+    width: 90vw;
+    height: 575px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
+  .about-hero h1{
+    font-size: 56px;
+    font-weight: bold;
+  }
+  .empowering{
+    color: orange;
+  }
+  .towards{
+    color: skyblue;
+  }
+  .about-hero{
+    width: 50%;
+    /* border: 2px solid purple; */
+  }
+
+  .hero-img{
+    width: 50%;
+    /* border: 2px solid pink; */
+    text-align: right;
+  }
+  /* .hero-img img{
+    width: 70%;
+  } */
+  .about-hero p{
+    font-size: 20px;
+    color: black;
+    opacity: 0.9;
+    margin: 24px 0px;
+  }
+  .hero-btn button{
+    width: 197px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }                     /*hero-section style end*/
+
+  /* main section style start  */
+  .curriculum{
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    height: 879px;
+    width: 100%;
+  }
+  .curriculum-about{
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+  .curriculum-about h2{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .card-item{
+    width: 367px;
+    height: 476px;
+    background: linear-gradient(
+      180deg,
+      rgba(222, 245, 255, 1)0%,
+      rgba(255, 255, 255, 0)45%
+    );
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 18px;
+  }
+  .card-item img{
+    margin: 52px 115px;
+  }
+  .card-item h3{
+    color: #202020;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 33px;
+  }
+  .card-item p{
+    color: #808080;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 38px;
+  }
+  .card-item h4{
+    color: #64C8FF;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .card-2{
+    background: linear-gradient(
+      180deg,
+      rgba(255, 244, 220, 1)0%,
+      rgba(255, 255, 255, 0)45%
+    );
+  }
+  .card-3{
+    background: linear-gradient(
+      180deg,
+      rgba(238, 225, 255, 1)0%,
+      rgba(255, 255, 255, 0)45%
+    );
+    
+  }
+  .aero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+  }
+  .aero i{
+    background-color: orange;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
 
   /* Mobil style */
 
@@ -106,6 +258,53 @@
     .navbar{
         height: 70px;
     }  /* mobil navbar style end */
+
+    /* Hero section style start  */
+    .hero-congener{
+      flex-direction: column-reverse;
+      text-align: center;
+      height: auto;
+    }
+    .about-hero,
+    .hero-img{
+      width: 90%;
+      margin: 10px auto;
+    }
+    .hero-img img{
+      width: 100%;
+    }
+    .about-hero h1{
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .about-hero p{
+      font-size: 14px;
+      color: black;
+      opacity: 0.9;
+    }               /* Hero section style end  */
+
+    /* main section style start  */
+
+    /* card-box style start  */
+    .card-box{
+      flex-direction: column;
+    }
+    .card-item{
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    .curriculum-about h2{
+      font-size: 26px;
+    }
+    .curriculum{
+      height: auto;
+    }
+    /* arrow left or right for mobil */
+    .aero{
+      display: none;
+    }                       /* card-box style end  */
+
   }
 
   /* computer navbar style  */
